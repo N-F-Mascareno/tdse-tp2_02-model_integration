@@ -1,14 +1,14 @@
-11:13:51 **** Incremental Build of configuration Debug for project tdse-tp2_02-model_integration ****
+22:32:42 **** Build of configuration Debug for project tdse-tp2_02-model_integration ****
 make -j2 all 
+arm-none-eabi-gcc "../app/src/task_sensor.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/task_sensor.d" -MT"app/src/task_sensor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/task_sensor.o"
+arm-none-eabi-gcc -o "tdse-tp2_02-model_integration.elf" @"objects.list"  -lrdimon -mcpu=cortex-m3 -T"C:\Users\nahue\STM32CubeIDE\tdse_workspace_tp2\tdse-tp2_02-model_integration\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tdse-tp2_02-model_integration.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tdse-tp2_02-model_integration.elf
+ 
 arm-none-eabi-size  tdse-tp2_02-model_integration.elf 
+arm-none-eabi-objdump -h -S tdse-tp2_02-model_integration.elf  > "tdse-tp2_02-model_integration.list"
    text	   data	    bss	    dec	    hex	filename
-  15784	    152	   2312	  18248	   4748	tdse-tp2_02-model_integration.elf
+  15844	    152	   2336	  18332	   479c	tdse-tp2_02-model_integration.elf
 Finished building: default.size.stdout
  
-11:14:12 **** Incremental Build of configuration Debug for project tdse-tp2_02-model_integration ****
-make -j2 all 
-arm-none-eabi-size  tdse-tp2_02-model_integration.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15784	    152	   2312	  18248	   4748	tdse-tp2_02-model_integration.elf
-Finished building: default.size.stdout
+Finished building: tdse-tp2_02-model_integration.list
  
