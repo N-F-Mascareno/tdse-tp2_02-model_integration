@@ -1,4 +1,4 @@
-11:11:06 **** Incremental Build of configuration Debug for project tdse-tp2_01-model_integration ****
+11:05:33 **** Incremental Build of configuration Debug for project tdse-tp2_01-model_integration ****
 make -j2 all 
 arm-none-eabi-size  tdse-tp2_01-model_integration.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  tdse-tp2_01-model_integration.elf
 Finished building: default.size.stdout
  
 
-11:11:09 Build Finished. 0 errors, 0 warnings. (took 3s.364ms)
+11:05:35 Build Finished. 0 errors, 0 warnings. (took 1s.732ms)
 
